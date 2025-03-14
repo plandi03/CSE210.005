@@ -1,5 +1,9 @@
 using System;
-
+// journal by Pablo Landivar CSE210.005 2025
+// I added a opcion 3 and 4 to save and load the journal to a file
+// I added a Entry class to store the prompt, response and date
+// A new file with number will be created each time the journal is saved
+// The journal will be loaded from the last file saved
 
 class Program
 {
