@@ -2,17 +2,18 @@ using System;
 using System.Collections.Generic;
 
 class Scripture
+
 {
     private Reference _reference;
     private List<Word> _words;
 
-    // Constructor
+    // Constructor for the Scripture class
     public Scripture(Reference reference, string text)
     {
         _reference = reference;
         _words = new List<Word>();
 
-        // Split the text into words and create Word objects
+        // Split the text into words and create Word objects to then hide words
         string[] wordArray = text.Split(' ');
         foreach (string word in wordArray)
         {
@@ -20,7 +21,7 @@ class Scripture
         }
     }
 
-    // Method to hide random words
+    // Method to hide random words in the scripture
     public void HideRandomWords(int numberToHide)
     {
         Random random = new Random();
@@ -41,7 +42,7 @@ class Scripture
         }
     }
 
-    // Method to get the display text of the scripture
+    // Method to get the display text of the scripture with hidden words
     public string GetDisplayText()
     {
         string scriptureText = _reference.GetDisplayText() + ": ";
