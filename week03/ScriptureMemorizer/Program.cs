@@ -14,8 +14,8 @@ class Program
         // Display the scripture and hide words iteratively
         while (true)
         {
-            Console.Clear();
-            Console.WriteLine(scripture.GetDisplayText());
+            Console.Clear();   // clear the console
+            Console.WriteLine(scripture.GetDisplayText()); // this will display the scripture
 
             // thii will check if all words are hidden
             if (scripture.IsCompletelyHidden())
@@ -25,8 +25,8 @@ class Program
             }
 
             Console.WriteLine("\nPress Enter to hide more words or type 'quit' to exit.");
-            string input = Console.ReadLine();
-            if (input.ToLower() == "quit")
+            string input = Console.ReadLine(); // this will take the input from the user and check if the user wants to quit or not, the blank input will hide more words
+            if (input.ToLower() == "quit") // this will check if the user wants to quit
             {
                 break;
             }

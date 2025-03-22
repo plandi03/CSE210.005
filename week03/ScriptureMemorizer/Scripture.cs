@@ -4,8 +4,8 @@ using System.Collections.Generic;
 class Scripture
 
 {
-    private Reference _reference;
-    private List<Word> _words;
+    private Reference _reference; // Reference object to store the book, chapter, and verse
+    private List<Word> _words;      // List of Word objects to store the words in the scripture
 
     // Constructor for the Scripture class
     public Scripture(Reference reference, string text)
