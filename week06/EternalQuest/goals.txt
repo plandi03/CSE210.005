@@ -1,0 +1,2 @@
+10
+SimpleGoal|exersice|do exercise every day|10|True
